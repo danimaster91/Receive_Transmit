@@ -1,9 +1,7 @@
 #include "Arduino.h"
 #include "receive_transmit.h"
-#include<nRF24L01.h>
-#include<RF24.h>
 
-Receive_Transmit::Receive_Transmit(int pin1, int pin2, bool receive)
+Receive_Transmit::Receive_Transmit(size_t pin1, size_t pin2, bool receive)
 {
   pinMode(pin1, OUTPUT);
   _pin1 = pin1;
